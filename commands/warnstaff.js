@@ -115,6 +115,12 @@ exports.run = async (client, message, args) => {
     }
   
     if(warnstaff[membro.id].warnstaff == 5) {
+      let embedi = new Discord.MessageEmbed()
+
+        .setTitle(`:warning: BaNiDo :warning:`)
+        .setFooter(`Você foi banido do ImpérioGeek pelo Staff: ${message.author.username}, Tenha um bom dia!`)
+      
+      await membro.send(embedi)
       message.guild.member(membro).ban(motivo);
       membro.send('Você foi banido do ImpérioGeek, Tenha um bom dia!')
       message.channel.send(`<@${membro.id}> foi banido por Levar 5 Avisos.`)
