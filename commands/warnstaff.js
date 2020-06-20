@@ -15,7 +15,7 @@ exports.run = async (client, message, args) => {
   .addField(`:bookmark: **Permissão**`, `\`MANAGE_MESSAGES\``)
   .setColor('#8c0046') 
 
-    //var canal = client.channels.cache.get('712451499564728380'); // Puxando o canal aonde iremos enviar que o usuário tomou um warn 
+    var canal = client.channels.cache.get('715993908018020425'); // Puxando o canal aonde iremos enviar que o usuário tomou um warn 
   // Requisitando a permissão de Administrador
     if (!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply(`apenas administradores podem utilizar esse comando!`)
     // Puxando o usuário que iremos dar o Warn
@@ -57,7 +57,7 @@ exports.run = async (client, message, args) => {
 
     //
     membro.send(embed); // Enviando pro usuário
-    message.channel.send(embedi); // Enviando no canal
+    canal.send(embedi); // Enviando no canal
     message.delete();
 
     if(warnstaff[membro.id].warnstaff == 1) {
