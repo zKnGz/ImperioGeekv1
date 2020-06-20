@@ -297,7 +297,7 @@ client.on("messageReactionAdd", (reaction, user) => {
 
             let result = Math.floor((Math.random() * TicketList.length))
 
-            let categoryID = "710219842833088602";
+            let categoryID = "723916931572433048";
 
             var bool = false;
 
