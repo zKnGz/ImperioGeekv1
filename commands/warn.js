@@ -95,6 +95,7 @@ exports.run = async (client, message, args) => {
     
     if(warns[membro.id].warns == 3) {
       message.guild.member(membro).ban(motivo);
+      membro.send('Você foi banido do ImpérioGeek, Tenha um bom dia!')
       canal.send(`<@${membro.id}> foi banido por Levar 3 Avisos.`)
     }
 }
