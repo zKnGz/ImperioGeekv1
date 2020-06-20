@@ -33,6 +33,7 @@ exports.run = async (client, message, args) => {
         .addField("📝Motivo:", reason, true)
         .setColor("RANDOM").setTimestamp()
 
+      member.send('Você foi banido do ImpérioGeek, Tenha um bom dia!')
       client.channels.cache.get('712451499564728380').send(embed)
   }
 
