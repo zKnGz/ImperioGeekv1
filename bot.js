@@ -320,12 +320,12 @@ client.on("messageReactionAdd", (reaction, user) => {
                         READ_MESSAGE_HISTORY: true
                     })
   
-                    chan.updateOverwrite(message.guild.roles.cache.find(x => x.name === "❪★❱ Equipe Administrativa ❪★❱"), {
+                    chan.updateOverwrite(message.guild.roles.cache.find(x => x.name === "❪★❱Equipe Administrativa❪★❱"), {
                         VIEW_CHANNEL: true,
                         SEND_MESSAGES: true
                     })
               
-                    chan.updateOverwrite(message.guild.roles.cache.find(s => s.name === "Suporte"), {
+                    chan.updateOverwrite(message.guild.roles.cache.find(s => s.name === "✧ ✧❱ᄽ»Suporte«ᄽ❰✧ ✧"), {
                               VIEW_CHANNEL: true,
                               SEND_MESSAGES: true
                           })
