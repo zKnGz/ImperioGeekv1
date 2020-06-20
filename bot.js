@@ -134,17 +134,15 @@ client.on('messageReactionAdd', async (reaction, user) => {
         if (reaction.emoji.name === "🔞") {
             await reaction.message.guild.members.cache.get(user.id).roles.add("719710390757359697")
         }
+        if (reaction.emoji.name === "🏰") {
+            await reaction.message.guild.members.cache.get(user.id).roles.add("722907575615750153")
+        }
         } else if (reaction.message.channel.id === "722602606073085966") {
         
         if (reaction.emoji.name === "🧱") {
             await reaction.message.guild.members.cache.get(user.id).roles.add("722960066466021446")
         }
           
-        } else if (reaction.message.channel.id === "710219850936615003") {
-        
-        if (reaction.emoji.name === "👾") {
-            await reaction.message.guild.members.cache.get(user.id).roles.add("722998018135162931")
-        }
         } else if (reaction.message.channel.id === "710219850936615003") {
         
         if (reaction.emoji.name === "👾") {
