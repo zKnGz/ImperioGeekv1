@@ -203,6 +203,9 @@ client.on('messageReactionAdd', async (reaction, user) => {
     if (reaction.emoji.name === "🔞") {
         await reaction.message.guild.members.cache.get(user.id).roles.remove("719710390757359697")
     }
+    if (reaction.emoji.name === "🏰") {
+        await reaction.message.guild.members.cache.get(user.id).roles.remove("722907575615750153")
+    }
     } else {
       return;
     }
