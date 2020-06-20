@@ -22,6 +22,13 @@ exports.run = async (client, message, args) => {
       return message.reply("Eu não posso expulsar este usuário! Ele tem um cargo mais alto ou eu não tenho permissões de banir?");
     let reason = args.slice(1).join(' ');
     if(!reason) reason = "Razão não fornecida";
+  
+  let embedi = new Discord.MessageEmbed()
+
+        .setTitle(`:warning: BaNiDo :warning:`)
+        .setFooter(`Você foi banido do ImpérioGeek pelo Staff: ${message.author.username}, Tenha um bom dia!`)
+      
+    await member.send(embedi)
     await member.ban(reason)
       .catch(error => message.reply(`${message.author} não consegui banir o membro devido o : ${error}`));
   
@@ -32,8 +39,7 @@ exports.run = async (client, message, args) => {
         .addField("🚨Membro Tag", member, false)
         .addField("📝Motivo:", reason, true)
         .setColor("RANDOM").setTimestamp()
-
-      member.send('Você foi banido do ImpérioGeek, Tenha um bom dia!')
+      
       client.channels.cache.get('712451499564728380').send(embed)
   }
 
