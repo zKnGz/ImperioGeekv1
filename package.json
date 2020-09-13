@@ -21,7 +21,7 @@
     "jimp": "^0.13.0",
     "moment": "^2.26.0",
     "ms": "^2.1.2",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "number-to-words": "^1.2.4",
     "quick.hook": "^1.5.1",
     "random-puppy": "^1.1.0",
